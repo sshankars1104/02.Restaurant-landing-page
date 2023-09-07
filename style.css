@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Qwigley&family=Source+Code+Pro:ital@1&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Qwigley", cursive;
+    font-family: "Source Code Pro", monospace;
+}
+
+/* -----------NavBar-----------  */
+
+#navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 0.5rem 1rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+    font-size: 3.5rem;
+    font-weight: 500;
+    font-family: Qwigley;
+    color: #ffb30e;
+}
+
+@media (min-width: 1200px) {
+    #navbar {
+        height: 60px;
+    }
+}
+
+/* -----------Look at your fav Meals-----------  */
+.Meals {
+    height: 50vh;
+    background-color: #ffb30e;
+}
+
+.split-60-40 {
+    display: flex;
+}
+
+.left-column {
+    flex: 60%;
+    padding: 10px;
+}
+
+.left-column h2 {
+    font-size: 4rem;
+    font-family: Qwigley;
+    color: white;
+}
+
+.left-column p {
+    font-size: 0.7rem;
+    color: #504f4f;
+}
+
+.right-column {
+    flex: 40%;
+    padding: 10px;
+}
+
+.right-column p img {
+    width: 200px;
+    align-items: end;
+}
+
+.right-column img {
+    width: 300px;
+    height: 300px;
+    text-align: right;
+}
+
+.search-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px 10px 10px 0px;
+}
+
+.search-input {
+    width: 70%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.search-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Delivery-bg {
+    background-color: rgb(136, 78, 136);
+    margin: 0px 170px 10px 0px;
+    padding: 10px 0px 10px 10px;
+}
+
+@media (max-width: 768px) {
+    .Meals {
+        height: 90vh;
+        background-color: #ffb30e;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .split-60-40 {
+        display: block;
+    }
+
+    .search-container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 10px 10px 0px;
+    }
+
+    .search-button {
+        margin-top: 10px;
+    }
+
+}
+
+/* -----------vada idly parrota Kichadi-----------  */
+
+.vada {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.vada .box-part img {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 8px 16px 0 #e8f802b0, 0 6px 20px 0 rgba(219, 243, 4, 0.959);
+}
+
+.box-part h4 {
+    font-family: Source Sans Pro;
+    font-size: small;
+    width: fit-content;
+    color: #424242;
+    font-weight: bold;
+    margin: 10px;
+
+
+}
+
+.box-part p {
+    font-family: Source Sans Pro;
+    font-size: small;
+    color: #f17228;
+    font-weight: bold;
+    background-color: #f1722833;
+    width: fit-content;
+    padding: 5px 15px;
+    box-shadow: 10px 10px 20px rgba(247, 2, 2, 0.3);
+
+}
+
+/* -----------How does it work-----------  */
+.How p {
+    color: #f17228;
+    font-family: Source Sans Pro;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+/* -----------Search-by-Food-----------  */
+.SearchbyFood {
+    background-color: #e5e5e5;
+    /* margin-bottom: 50px; */
+}
+
+.Search-by-Food p {
+    font-family: Source Sans Pro;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.Search-by-Food {
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+}
+
+/* -----------Best deals Crispy Tiffen-----------  */
+.Best-Deals {
+    margin-top: 17rem;
+    margin-bottom: 17rem;
+}
+
+.Best-Deals {
+    display: flex;
+    height: auto;
+}
+
+.left {
+    flex: 30%;
+    padding: 10px;
+}
+
+.right {
+    flex: 70%;
+    padding: 10px;
+}
+
+.Best-Deals .right img {
+    width: 600px;
+    height: fit-content;
+    position: absolute;
+    right: 120px;
+}
+
+.Best-Deals .left h2 {
+    font-family: Source Sans Pro;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.Best-Deals .left h2 span {
+    font-family: Source Sans Pro;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffb30e;
+}
+
+.Best-Deals .left p {
+    color: #616161b0;
+    font-family: Source Sans Pro;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.Best-Deals .left button {
+    border-radius: 4px;
+    background-color: #ffb30e;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    font-family: Source Sans Pro;
+    font-size: 1.3rem;
+    padding: 10px;
+    width: 100%;
+}
+
+.Best-Deals .left {
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+@media (max-width: 992px) {
+    .Best-Deals .right img {
+        width: 80%;
+    }
+
+    .Best-Deals {
+        width: 90%;
+    }
+
+    .Best-Deals .left button {
+        width: 80%;
+    }
+
+    .Best-Deals .right img {
+        width: 90%;
+        position: relative;
+        top: 50px;
+        left: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Best-Deals {
+        display: block;
+    }
+
+    .Best-Deals .left button {
+        width: 100%;
+    }
+
+    .Best-Deals .right img {
+        width: 90%;
+        position: relative;
+        top: 50px;
+        left: 50px;
+    }
+
+    .Best-Deals .left {
+        text-align: center;
+        width: 90%;
+    }
+}
+
+/* -----------Popular items-----------  */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    /* Adjust the gap between grid items as needed */
+}
+
+.grid-item {
+    text-align: center;
+    box-shadow: 0 8px 16px 0 #e8f802b0, 0 6px 20px 0 rgba(219, 243, 4, 0.959);
+}
+
+.Popular-items h2 {
+    font-family: Source Sans Pro;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.Popular-items .card-title {
+    font-family: Source Sans Pro;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Popular-items a {
+    font-family: Source Sans Pro;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    /* background-color: #f17228; */
+    border: #f17228;
+    transition: 0.4s;
+    box-shadow: 0 8px 16px 0 #f17228, 0 6px 20px 0 rgba(219, 243, 4, 0.959);
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.Popular-items {
+    margin-bottom: 200px;
+}
+
+/* -----------Footer-----------  */
+
+.footer {
+    background-color: #000000;
+}
